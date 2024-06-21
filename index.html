@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Estruturas de Dados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Simulador de Estruturas de Dados</h1>
+    <div id="controls">
+        <button onclick="simulateQueue()">Simular Fila</button>
+        <button onclick="addToQueue(prompt('Digite o valor a ser adicionado na fila:'))">Adicionar na Fila</button>
+        <button onclick="removeFromQueue()">Remover da Fila</button>
+
+        <button onclick="simulateLinkedList()">Simular Lista Ligada</button>
+        <button onclick="linkedList.addToEnd(prompt('Digite o valor a ser adicionado na lista ligada:'))">Adicionar na Lista Ligada</button>
+        <button onclick="linkedList.removeFromStart()">Remover da Lista Ligada</button>
+
+        <button onclick="simulateGraph()">Simular Grafo</button>
+        <button onclick="addNode()">Adicionar Nó</button>
+        <button onclick="addEdge()">Adicionar Aresta</button>
+        <button onclick="removeEdge()">Remover Aresta</button>
+    </div>
+    <div id="visualization"></div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
